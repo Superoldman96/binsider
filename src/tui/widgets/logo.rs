@@ -4,9 +4,9 @@ use ansi_to_tui::IntoText;
 use ratatui::{
     buffer::Buffer,
     layout::Rect,
-    style::{Color, Style, Stylize},
+    style::{Color, Style},
     text::Text,
-    widgets::{Widget, WidgetRef},
+    widgets::Widget,
 };
 
 const LOGO: &str = "
@@ -40,8 +40,8 @@ impl Default for Logo {
     }
 }
 
-impl WidgetRef for Logo {
-    fn render_ref(&self, area: Rect, buf: &mut Buffer) {
+impl Widget for &Logo {
+    fn render(self, area: Rect, buf: &mut Buffer) {
         let text: Text = LOGO.into_text().expect("failed to parse ANSI");
         text.render(area, buf);
         let message = "Loading...";
