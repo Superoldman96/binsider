@@ -2,6 +2,15 @@
 
 [**binsider**](https://binsider.dev): Analyze ELF binaries like a boss 😼🕵️‍♂️
 
+
+## 0.3.2 - 2026-02-01
+
+### ⚙️ Miscellaneous Tasks
+
+- Bump dependencies
+
+**Full Changelog**: https://github.com/orhun/binsider/compare/v0.3.1...0.3.2
+
 ## 0.3.1 - 2026-01-16
 
 ### ⚙️ Miscellaneous Tasks
